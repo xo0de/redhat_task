@@ -6,7 +6,7 @@ A simple web application to show current date and time
 
 ## Running
 
-1. Crate directory `/var/tmp/mytime`
+1. Crate directory `/etc/mytime`
 2. Create file `mytime.conf` in this directory with at least port defined. See "Configuration"
    section.
 3. Run `python app.py`
@@ -14,7 +14,7 @@ A simple web application to show current date and time
 
 ## Configuration
 
-Possible configuration in `/var/tmp/mytime/mytime.conf`. Following options are accepted:
+Possible configuration in `/etc/mytime.conf`. Following options are accepted:
 - port : Select on which port the application runs
 - format : Select format of the displayed time (12h|24h). Default is `24h`
 - dynamic : Whether the page should autorefresh (true|false). Default is `true`
