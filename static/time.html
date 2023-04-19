@@ -14,7 +14,11 @@
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const now = new Date();
-        document.getElementById("time").innerHTML = now.getHours() + ":" + now.getMinutes();
+        document.getElementById("time").innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
     });
+    setInterval(() => {
+	const now = new Date();
+	document.getElementById("time").innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+}, 1000);
 </script>
 </html>
